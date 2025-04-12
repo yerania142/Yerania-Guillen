@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <div class="container">
+         <label for="nombre"> Nombre:</label><br><br>
+         <input type="text" id="nombre"><br><br>
+ 
+         <label for="apellido">Apellido:</label><br><br>
+         <input type="text" id="apellido"><br><br>
+ 
+         <label for="email">Email:</label><br><br>
+         <input type="email" id="email"><br><br>
+ 
+         <label for="asunto">Asunto:</label><br><br>
+         <input type="text" id="asunto"><br><br>
+ <br>
+ <label for="mensaje">Mensaje (menos de 300 caracteres):</label><br>
+ <input type="text" id="mensaje" maxlength="300" required><br><br>
+     </div>
+    
+        <button onclick="enviarDatos()">Enviar Datos</button>
+        <br><br>
+    <table id="formulario" border="1px" width=100%>
+        
+    <tr>
+        <th width=10%>Nombre</th>
+        <th width=10%>Apellidos</th>
+        <th width=10%>Email</th>
+        <th width=20%>Asunto</th>
+        <th width=50%>Mensaje</th>
+    </tr>
+    </table>
+    
+    <script src="app.js"></script>
+</body>
+</html>

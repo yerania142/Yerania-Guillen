@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+<h1>INVENTARIO</h1>
+
+    <label for="articulo">Ingrese el articulo</label>
+<input type="text" id="articulo"><br><br>
+<label for="codigo">ingrese codigo</label>
+<input type="number" id="codigo" placeholder="Ingrese codigo"><button onclick="buscarEstudiante()">Buscar</button><br><br>
+<label for="entrada">Entradas</label>
+<input type="number" id="entrada"><br><br>
+<label for="salida">Ingrese Salida</label>
+<input type="number" id="salida"><br><br>
+<button onclick="cargarArticulo()">Cargar Articulo</button>
+<button onclick="actualizarArticulo()">Actualizar Articulo</button>
+<button onclick="eliminarArticulos()">Eliminar Articulos</button>
+<br><br>
+
+
+  <table border="1px" width="100%" id="Inventario">
+    <tr>
+      <th width="20%">Codigo</th>
+      <th width="20%">Articulo</th>
+      <th width="20%">entrada</th>
+      <th width="20%">Salida</th>
+  <th width="20%">STOCK</th>
+    </tr>
+  
+  
+      
+  </table>
+  <h1>VENTA</h1>
+  <br><br><br>
+  <label for="Articulos">Ingrese el articulo</label>  
+  <input type="text" id="Articulos"><br><br>
+  <label for="Codigo">ingrese codigo</label>
+  <input type="number" id="Codigo" placeholder="Ingrese codigo"><button onclick="buscarArticulo()">Buscar</button><br><br>
+  <label for="fecha">fecha</label>
+  <input type="date" id="fecha"><br><br>
+  <label for="cantidad">Ingrese cantidad</label>
+  <input type="number" id="cantidad"><br><br>
+  <button onclick="guardarArticulo()">guardar Articulos</button>
+  <button onclick="editarArticulos()">editar Articulos</button>
+  <button onclick="borrarArticulo()">Eliminar Articulos</button>
+  <br><br>
+  
+  
+  <table border="1px" width="100%" id="Entrada">
+      <tr>
+        <th width="20%">Codigo</th>
+        <th width="20%">Articulo</th>
+        <th width="20%">fecha</th>
+        <th width="20%">cantidad</th>
+    
+      </tr>
+    
+    
+        
+    </table>
+
+  <br><br><br>
+  <h1>COMPRA</h1>
+  <label for="producto">Ingrese el articulo</label>  
+  <input type="text" id="producto"><br><br>
+  <label for="numero">ingrese codigo</label>
+  <input type="number" id="numero" placeholder="Ingrese codigo"><button onclick="buscarEstudiante()">Buscar</button><br><br>
+  <label for="fechas">fecha</label>
+  <input type="date" id="fechas"><br><br>
+  <label for="Cantidades">Ingrese cantidad</label>
+  <input type="number" id="Cantidades"><br><br>
+  <button onclick="GuardarArticulos()">guardar Articulos</button>
+  <button onclick="EditarArticulo()">editar Articulos</button>
+  <button onclick="BorrarArticulos()">Eliminar Articulos</button>
+  <br><br>
+  
+  
+  <table border="1px" width="100%" id="Salida">
+      <tr>
+        <th width="20%">Codigo</th>
+        <th width="20%">Articulo</th>
+        <th width="20%">fecha</th>
+        <th width="20%">cantidad</th>
+    
+      </tr>
+    
+
+
+</body>
+<script src="app.js"></script>
+</html>

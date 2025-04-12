@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+<h1 style="text-align: center;background-color: crimson;">Tienda de electronica<br>GYCG</h1>
+
+    <label for="articulo">Ingrese el articulo</label>
+<input type="text" id="articulo">
+<label for="codigo">ingrese codigo</label>
+<input type="number" id="codigo" placeholder="Ingrese codigo"><button onclick="buscarEstudiante()">Buscar</button>
+<label for="marcas">marcas</label>
+<input type="text" id="entrada">
+<label for="salida">compras</label>
+<input type="number" id="salida"><br><br>
+<button onclick="cargarArticulo()">Cargar Articulo</button>
+<button onclick="actualizarArticulo()">Actualizar Articulo</button>
+<button onclick="eliminarArticulos()">Eliminar Articulos</button>
+
+
+  <table border="1px" width="100%" id="Inventario" style="background-color: crimson;">
+    <tr>
+      <th width="20%">Codigo</th>
+      <th width="20%">Articulo</th>
+      <th width="20%">cantidad</th>
+      <th width="20%">precio</th>
+    </tr>
+  
+
+
+</body>
+<script src="app.js"></script>
+</html>
